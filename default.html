@@ -18,10 +18,11 @@
                 <h2>BEMCo Mobile Dispatch System.</h2>
 <br>
 <br>
-                <p>Please enter password to proceed:</p>
-                <textarea name="passwordEntry" id="passwordEntry" rows=1></textarea> 
-                <br>
-                <button <a href="null">Submit</a></button> 
+                <form name="loginForm" method="post" action="loginServlet">
+                        Username: <input type="text" name="username"/> <br/>
+                        Password: <input type="password" name="password"/> <br/>
+                <input type="submit" value="Login" />
+                </form>
         </div>
 <!-- Footer -->
 <footer id="footer">

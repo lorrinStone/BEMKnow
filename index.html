@@ -20,12 +20,15 @@
 							<div class="inner">
 								<h1>BEMKnow</h1>
 								<p>send dispatch to BEMCo below:</p>
-								<p>Call Location/Building:<textarea name="callLocation" id="callLocation" rows="1"></textarea></p>
-								<p>Room Number:<textarea name="roomNumber" id="roomNumber" rows="1"></textarea></p>
-								<p>Call Complaint:<textarea name="callComplaint" id="callComplaint" rows="1"></textarea></p>
-								<input type="checkbox" id="pageBool" name="pageBool" value="">
-									<label for="pageBool"> Select to activate pagers</label>
-								<button>DISPATCH.</button>
+								<form name="callForm" method="page" action="twilioConnect">
+									Call Location/Building: <input type="text" name="callLocation"/> <br/>
+									Room Number: <input type="text" name="roomNumber"/> <br/>
+									Call Nature: <br/>
+									<textarea rows="5" cols="30" name="callNature"></textarea>
+									<input type="checkbox" id="pageBool" name="pageBool" value="">
+										<label for="pageBool">Select to activate pagers.</label>
+										<input type="submit" value="Dispatch" />
+								</form>
 							</div>
 						</div>
 						<nav>
