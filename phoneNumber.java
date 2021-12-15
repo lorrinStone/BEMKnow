@@ -10,6 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
  
 @WebServlet("/phoneNumber")
-public class LoginServlet extends HttpServlet {
+public class phoneNumber extends HttpServlet {
 
 }
