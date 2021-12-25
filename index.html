@@ -1,109 +1,38 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 
 <html>
-	<head>
+    <head>
+        <link rel="shortcut icon" href=null />
 		<title>BEMKnow</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Header -->
-					<header id="header">
+    </head>
+    <body>
+        <header id="header">
 						
-						<div class="content">
-							<div class="inner">
-								<h1>BEMKnow</h1>
-								<p>send dispatch to BEMCo below:</p>
-								<form name="callForm" method="page" action="twilioConnect">
-									Call Location/Building: <input type="text" name="callLocation"/> <br/>
-									Room Number: <input type="text" name="roomNumber"/> <br/>
-									Call Nature: <br/>
-									<textarea rows="5" cols="30" name="callNature"></textarea>
-									<input type="checkbox" id="pageBool" name="pageBool" value="">
-										<label for="pageBool">Select to activate pagers.</label>
-										<input type="submit" value="Dispatch" />
-								</form>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#ChangeCrew">Change Crew</a></li>
-								<li><a href="#Help">Help</a></li>
-								<li><a href="#contact">Contact</a></li>
-							</ul>
-						</nav>
-					</header>
+            <div class="content">
+                <div class="inner">
+                <h1>BEMKnow</h1>
+                <h2>BEMCo Mobile Dispatch System.</h2>
+<br>
+<br>
+                <form name="loginForm" method="post" action="loginServlet">
+                        Username: <input type="text" name="username"/> <br/>
+                        Password: <input type="password" name="password"/> <br/>
+                <input type="submit" value="Login" />
+                </form>
+        </div>
+<!-- Footer -->
+<footer id="footer">
+    <p class="copyright">&copy; BEMKnow. Built by Lorrin Stone and Alex Zhu. Unaffiliated with Brandeis University. Copyright 2021.</p>
+</footer>
 
-				<!-- Main -->
-					<div id="main">
+<!--Scripts inserted here:-->
 
-						<article id="Change">
-							<h2 class="major">Help Page.</h2>
-							<p>Help page here....</p>
-						</article>
-						
-						<!-- Change Crew Page -->
-							<article id="ChangeCrew">
-								<h2 class="major">Change the duty crew below:</h2>
-								<p>Supervisor:<textarea name="SupervisorPhone" id="SupervisorPhone" rows="1"></textarea></p>
-								<p>Primary:<textarea name="PrimaryPhone" id="PrimaryPhone" rows="1"></textarea></p>
-								<p>Secondary:<textarea name="SecondaryPhone" id="SecondaryPhone" rows="1"></textarea></p>
-								<p>Tertiary: <textarea name="TertiaryPhone" id="TertiaryPhone" rows="1"></textarea> </p>
-								<button href="">Save</b>
-							</article>
 
-						<!-- Help Page -->
-							<article id="Help">
-								<h2 class="major">Help Page.</h2>
-								<p>Help page here....</p>
-							</article>
 
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
-							</article>
-					</div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; BEMKnow. Built by Lorrin Stone and Alex Zhu. Unaffiliated with Brandeis University. Copyright 2021.</p>
-					</footer>
-
-			</div>
-
-		<!-- Set Background here -->
-			<!--<div id="bg"></div> -->	
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-	</body>
+    </body>
 </html>
