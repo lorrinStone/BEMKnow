@@ -14,7 +14,7 @@ function addRecipient(phoneNumber) {
 }
 
 function clearForm(form) {
-  // only clearing the passcode and leaving the message for convience
+  // passcode value here, if needed
   form.passcode.value = '';
 }
 
